@@ -26,6 +26,7 @@ for prereq in coursePrereq:
     prereq_courses = [link.text.strip() for link in prereq_links if 'Yes' not in link.text.strip()]
     coursePrereqList.append(prereq_courses)
 
+#enumeration to fix bugs
 for i, prereqs in enumerate(coursePrereqList):
     print(f"Course {i + 1} prerequisites:")
     for prereq in prereqs:
